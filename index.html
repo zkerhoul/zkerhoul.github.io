@@ -10,60 +10,46 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Zak Kerhoulas</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Zak Kerhoulas</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+  <body class="about">
+    <header role="banner">
+      <a href="/" class="logo">
+        ZK
+        <title>Zak Kerhoulas</title>
+      </a>
+      <nav role="navigation">
+        <div><a href="/index.html">About</a></div>
+        <div><a href="/index.html">Projects</a></div>
+      </nav>
+    </header>
+
+    <div>
+      <main>
+        <div></div>
+        <div>
+          <h1>Zak Kerhoulas</h1>
+          <h2>About Me</h2>
+          <p>I'm a sound designer, software developer,</p>
+          <p>
+            Currently, I'm an undergraduate student at the University of
+            Michigan pursuing a B.S.E. in Computer Science from the College of
+            Engineering and a B.S. in Sound Engineering from the Department of
+            Performing Arts Technology.
+          </p>
+          <h2>Research Interests</h2>
+          <p>Machine Learning, Human-AI Interaction, Acoustic Ecology,</p>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      </main>
+
+      <footer role="contentinfo">
+        <div>
+          <a href="#">&uarr;</a>
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/headshot.jpeg" alt="Zak Kerhoulas Headshot" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello I'm</p>
-        <h1>Zak Kerhoulas</h1>
-        <p class="section__text__p2">Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2">Download CV</button>
+        <div>
+          <div><a href="index.html">About</a></div>
+          <div><a href="index.html">Projects</a></div>
         </div>
-        <div class="btn-container">
-          <button class="btn btn-color-1">Contact</button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="Zak Kerhoulas - LinkedIn Profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/zachary-kerhoulas-90a444247/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="Zak Kerhoulas - GitHub Profile"
-            class="icon"
-            onclick="location.href='https://github.com/zkerhoul'"
-          />
-        </div>
-      </div>
-    </section>
-    <script src="script.js"></script>
+      </footer>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
