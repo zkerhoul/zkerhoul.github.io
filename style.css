@@ -19,15 +19,9 @@ html {
     margin: 0;
 }
 
-@media (min-width: 1000px) {
-    html {
-        font-size: 17px;
-    }
-}
-
 body {
     background-color: #fff;
-    color: #858590;
+    color: #8f8a80;
     transition: background-color 0.6s ease;
     margin: 0 calc(1*var(--unit-line-height));
 }
@@ -41,11 +35,6 @@ main img {
     width: 100%;
 }
 
-.split {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 svg.illo {
     display: block;
     margin: calc(4*var(--unit-line-height)) auto;
@@ -57,18 +46,6 @@ img.dim {
     filter: brightness(0.95);
 }
 
-@media (min-width: 1000px) {
-    body.about main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: var(--unit-line-height);
-    }
-
-    svg.illo {
-        margin: 0 auto;
-    }
-}
-
 /* TYPOGRAPHY */
 h1,
 h2 {
@@ -77,18 +54,18 @@ h2 {
 
 h1 {
     font-size: var(--unit-font-large);
-    margin: 0 0 calc(0.0025*var(--unit-line-height));
+    margin: 0 0 calc(1*var(--unit-line-height));
     letter-spacing: 0;
 }
 
 h2 {
     font-size: 1rem;
-    margin: calc(2*var(--unit-line-height)) 0 0;
+    margin: calc(1*var(--unit-line-height)) 0 0;
     color: #fff;
 }
 
 a {
-    color: #858590;
+    color: #8f8a80;
     transition: opacity 0.3s ease;
     text-decoration: none;
 }
@@ -145,7 +122,7 @@ body>header svg {
 }
 
 body>header svg path {
-    fill: #858590;
+    fill: #423E37;
 }
 
 a.logo {
@@ -167,20 +144,17 @@ footer>div:last-child {
     grid-column: 1 / span 2;
 }
 
-footer div.copyright {
-    font-size: 14px;
+footer div.socials-container {
+    display: flex;
+    justify-content: left;
+    gap: 0.1rem;
 }
 
-@media (min-width: 1000px) {
-    footer {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    footer div:last-child {
-        grid-column-start: 3;
-    }
+footer svg {
+    cursor: pointer;
+    height: 2rem;
+    fill: #8f8a80;
 }
-
 
 /* ABOUT */
 .about {
@@ -197,10 +171,17 @@ body.about svg.illo {
 }
 
 body.about svg path {
-    fill: #515F44;
+    fill: #423E37;
 }
 
 body.about h2 {
     color: #8f8a80;
 }
 
+/* PROJECTS */
+
+/* INDIVIDUAL PROJECT */
+.project-page {
+    background-color: #fff;
+    color: #8f8a80;
+}

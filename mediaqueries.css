@@ -1,0 +1,29 @@
+/* BODY AND LAYOUT */
+@media (min-width: 1000px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body.about main, body.project-page main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: var(--unit-line-height);
+    }
+
+    svg.illo {
+        margin: 0 auto;
+    }
+}
+
+/* FOOTER */
+@media (min-width: 1000px) {
+    footer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    footer div:last-child {
+        grid-column-start: 3;
+    }
+}
