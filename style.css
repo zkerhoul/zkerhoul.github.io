@@ -35,11 +35,11 @@ main img {
     width: 100%;
 }
 
-svg.illo {
+img.illo {
     display: block;
-    margin: calc(4*var(--unit-line-height)) auto;
+    margin: calc(2*var(--unit-line-height)) auto;
     width: 80%;
-    max-width: 22em;
+    max-width: 35em;
 }
 
 img.dim {
@@ -111,7 +111,7 @@ body>header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--unit-line-height);
-    margin-bottom: calc(5*var(--unit-line-height));
+    margin-bottom: calc(4*var(--unit-line-height));
     line-height: var(--unit-line-height);
     padding-top: var(--unit-line-height);
 }

@@ -1,3 +1,10 @@
+/* VARIABLES */
+:root {
+    --unit-maxwidth-text: 35em;
+    --unit-line-height: 1.5em;
+    --unit-font-large: 3rem;
+}
+
 /* BODY AND LAYOUT */
 @media (min-width: 1000px) {
     html {
@@ -12,8 +19,15 @@
         grid-gap: var(--unit-line-height);
     }
 
-    svg.illo {
+    img.illo {
         margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    body>header {
+        margin-bottom: calc(2*var(--unit-line-height));
     }
 }
 
